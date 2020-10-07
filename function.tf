@@ -1,10 +1,3 @@
-resource "azurerm_application_insights" "sample" {
-  name                = "sample-application-insights-rnakamine"
-  location            = azurerm_resource_group.sample.location
-  resource_group_name = azurerm_resource_group.sample.name
-  application_type    = "web"
-}
-
 resource "azurerm_app_service_plan" "sample" {
   name                = "sample-app-service-plan-rnakamine"
   location            = azurerm_resource_group.sample.location
